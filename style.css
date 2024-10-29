@@ -1,0 +1,39 @@
+/* https://github.com/lonekorean/gist-syntax-themes */
+@import url('https://cdn.rawgit.com/lonekorean/gist-syntax-themes/d49b91b3/stylesheets/idle-fingers.css');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    font: 16px 'Open Sans', sans-serif;
+}
+body .gist .gist-file {
+    border-color: #373737;
+}
+body .gist .gist-data {
+    border-color: #373737;
+}
+body .gist .gist-meta {
+    color: #ffffff;
+    background: #373737;
+}
+body .gist .gist-meta a {
+    color: #ffffff;
+}
+body .gist .gist-data .pl-s .pl-s1 {
+    color: #a5c261;
+}
+
+div.snippet {
+    width: 480px;
+    height: 240px;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 15px;
+    background: #323232;
+}
+
+div > div.snippet {
+    width: 480px;
+    height: 240px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
