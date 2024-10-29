@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        link rel="stylesheet" type="text/css" href="style.css" />
+        <title>GMETRIX Study Guide</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Domain 1</h1>
+        <h2>Assignment and Arithmetic Operators</h2>
+        <p>
+            <div class="snippet"></div>
+              <div>
+            <script src="https://gist.github.com/JPT-Gross/64c896e02198b9cedc8c754e49faf032.js"></script>
+            <div>     
+            </div>
+            Using JavaScript, I set a varible named x to
+            <span id="assignment">x</span>
+        </p>
+        <div class="snippet">
+            <div>
+            <script src="https://gist.github.com/JPT-Gross/64c896e02198b9cedc8c754e49faf032.js"></script>
+            </div>
+        </div>
+        <p>Using these two buttons we can make x go up by 1 or down by 1</p>
+        <button type="button" onclick="incX">+</button>
+        <button type="button" onclick="decX">-</button>
+        <div class=""snippet"
+        <div>
+        <script src="https://gist.github.com/sirnajid/d27675e410beeecaf23123509e093876.js"></script>
+        </div>
+        </div>
+        <P>Using these two buttons we can make x go up by 5 or down by 5</P>
+        button type="button" onclick="incXBy5()">+5</button>
+        <button type="button" onclick="decXBy5()">-5</button>
+    </body>
+    <script>
+        var x = 500;
+        document.getElementById('assignment').innerHTML = x;
+        function incX(){
+           x++;
+        }function decX(){
+           x--;
+           document.getElementById('assignment').innerHTML = x;
+        }
+        function incXBy5(){
+            x +=5;
+            document.getElementById('assignment').innerHTML = x;
+        }
+        function decXBy5(){
+            x -=5;
+        }    document.getElementById('assignment').innerHTML = x;
+    </script>
+</html>
+
