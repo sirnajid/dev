@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>GMETRIX Study Guide</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Domain 1</h1>
+        <h2>Assignment and Arithmetic Operators</h2>
+        <div class="snippet">
+            <div>
+                <script src="https://gist.github.com/JPT-Gross/64c896e02198b9cedc8c754e49faf032.js"></script>
+            </div>
+        </div>
+        <p>
+            Using JavaScript, I set a varible named x to
+            <span id="assignment">x</span>
+        </p>
+        <div class="snippet">
+            <div>
+                <script src="https://gist.github.com/JPT-Gross/8203b9f2bb75d9f21498bca3ab460319.js"></script>
+            </div>
+        </div>
+        <p>Using these two buttons we can make x go up by 1 or down by 1</p>
+        <button type="button" onclick="incX()">+</button>
+        <button type="button" onclick="decX()">-</button>
+        <div class="snippet">
+            <div>
+                <script src="https://gist.github.com/JPT-Gross/71d2b131d4401b7fab3663ac29b51c20.js"></script>
+            </div>
+        </div>
+        <p>Using these two buttons we can make x go up by 5 or down by 5</p>
+        <button type="button" onclick="incXBy5()">+5</button>
+        <button type="button" onclick="decXBy5()">-5</button>
+        <div class="snippet">
+            <div>
+                <script src="https://gist.github.com/JPT-Gross/0dda7ada93400f643b3bffbc02bcbb7e.js"></script>
+            </div>
+        </div>
+        <p>
+            The modulo operator(%) returns the remainder of a division problem.
+            We can use this to keep numbers within a specific range.
+        </p>
+        <p>
+            Watch as this number cycles from 0 to 5 and back again:&nbsp;
+            <span id="y">y</span>
+        </p>
+        <button type="button" onclick="incAndMod()">+</button>
+        <h2>Best Practices</h2>
+        <div class = "snippet">
+          </div>
+             <script src="https://gist.github.com/sirnajid/417f9155ebc22127cb34697dcda65d76.js"></script>
+          </div>
+        </div> 
+    <div class="snippet">
+        </div>
+      < <script src="https://gist.github.com/sirnajid/30d03688da184c9c0c2b858851088298.js"></script>
+        </div>
+     </div>
+        <p>
+            To send information to the command console, we use the JavaScript 
+            function console.log(); <br>
+            If you right click and click inspect on this page, the command console should read " Hello World!"
+        </p>
+    <h2>Exception Handling</h2>
+    <p>The button below calls a function that is written incorrectly on purpose to throw an exception. Click and see.</p>
+    <button type ="button" onClick="error()" >ERROR</button>"
+    </body>
+    <script>
+        var x = 500;
+        var y = 0;
+        document.getElementById('assignment').innerHTML = x;
+        document.getElementById('y').innerHTML = y;
+        function incX() {
+            x++;
+            document.getElementById('assignment').innerHTML = x;
+        }
+        function decX() {
+            x--;
+            document.getElementById('assignment').innerHTML = x;
+        }
+        function incXBy5() {
+            x += 5;
+            document.getElementById('assignment').innerHTML = x;
+        }
+        function decXBy5() {
+            x -= 5;
+            document.getElementById('assignment').innerHTML = x;
+        }
+        function incAndMod() {
+            y = (y + 1) % 6;
+            document.getElementById("y").innerHTML = y;
+        }
+        console.log("Hello, World!");
+        function error(){
+            try {
+              adddlert("Welcome!")
+            }
+            catch{
+                alert("WHOOPS! YOU SLIPPED UP AGAIN");
+            }
+            finally {
+                document.getElementById("error").innerHTML = "Hope that worked!"
+            }
+        }
+    </script>
+</html>
+
